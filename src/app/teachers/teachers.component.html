@@ -1,0 +1,31 @@
+<!-- <h2>
+
+    {{teacher}}</h2>
+<h2>{{teacher.name | uppercase}} Details</h2>
+<div><span>id: </span>{{teacher.id}}</div>
+<div><span>name: </span>{{teacher.name}}</div>
+
+<div>
+    <label for="name">Teacher name: </label>
+    <input id="name" [(ngModel)]="teacher.name" placeholder="name">
+</div> -->
+
+
+<h2>My Teachers</h2>
+<ul class="teachers">
+    <li *ngFor="let teacher of teachers">
+        <button type="button" (click)="onSelect(teacher)">
+      <span class="badge">{{teacher.id}}</span>
+      <span class="name">{{teacher.name}}</span>
+    </button>
+    </li>
+</ul>
+
+<div *ngIf="selectedTeacher">
+    <h2>{{selectedTeacher.name | uppercase}} Details</h2>
+    <div>id: {{selectedTeacher.id}}</div>
+    <div>
+        <label for="teacher-name">Teacher name: </label>
+        <input id="teacher-name" [(ngModel)]="selectedTeacher.name" placeholder="name">
+    </div>
+</div>
