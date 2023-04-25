@@ -30,7 +30,18 @@ onSelect(teacher : Teacher): void {
         .subscribe(teachers => this.teachers = teachers);
   }
   
+  add(name: string): void {
+    name = name.trim();
+    if (!name) { return; }
+    this.teacherService.addTeacher({ name } as Teacher)
+      .subscribe(teacher => {
+        this.teachers.push(teacher);
+      });
+  }
 
-
+  delete(teacher: Teacher): void {
+    this.teachers = this.teachers.filter(h => h !== teacher);
+    this.teacherService.deleteTeacher(teacher.id).subscribe();
+  }
 
 }

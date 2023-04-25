@@ -6,10 +6,11 @@ import { TeacherDetailComponent } from './teacher-detail/teacher-detail.componen
 
 
 const routes: Routes = [
-  { path: 'teachers', component: TeachersComponent },
-  { path: 'dashboard', component: DashboardComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: 'teachers', component: TeachersComponent },
   { path: 'detail/:id', component: TeacherDetailComponent },
+  { path: 'dashboard', component: DashboardComponent },
+  
 ];
 
 @NgModule({
@@ -18,4 +19,6 @@ const routes: Routes = [
 
 
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+  
+}

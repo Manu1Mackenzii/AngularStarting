@@ -3,10 +3,13 @@
     <h2>{{teacher.name | uppercase}} Details</h2>
     <div><span>id: </span>{{teacher.id}}</div>
     <div>
-      <label for="teacher-name">Teacher name: </label>
+      <label for="teacher-name">Nom du professeur: </label>
       <input id="teacher-name" [(ngModel)]="teacher.name" placeholder="name">
     </div>
-  
+
+    <button type="button" (click)="save()">Sauvegarder</button>
+
+    <button type="button" (click)="goBack()">Retour</button>
   </div>
 
 
