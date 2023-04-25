@@ -5,13 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TeachersComponent } from './teachers/teachers.component';
 import { FormsModule } from '@angular/forms';
-import { TeacherDetailComponent } from './teacher-detail/teacher-detail.component'; // <-- NgModel lives here
+import { TeacherDetailComponent } from './teacher-detail/teacher-detail.component';
+import { MessagesComponent } from './messages/messages.component'; // <-- NgModel lives here
 
 @NgModule({
   declarations: [
     AppComponent,
     TeachersComponent,
-    TeacherDetailComponent
+    TeacherDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,

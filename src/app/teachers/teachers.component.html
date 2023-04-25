@@ -21,11 +21,5 @@
     </li>
 </ul>
 
-<div *ngIf="selectedTeacher">
-    <h2>{{selectedTeacher.name | uppercase}} Details</h2>
-    <div>id: {{selectedTeacher.id}}</div>
-    <div>
-        <label for="teacher-name">Teacher name: </label>
-        <input id="teacher-name" [(ngModel)]="selectedTeacher.name" placeholder="name">
-    </div>
-</div>
+
+<app-teacher-detail [teacher]="selectedTeacher"></app-teacher-detail>

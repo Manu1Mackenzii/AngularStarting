@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component , Input} from '@angular/core';
+import { Teacher } from '../teachers/teacher';
+
 
 @Component({
   selector: 'app-teacher-detail',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./teacher-detail.component.css']
 })
 export class TeacherDetailComponent {
+ 
+  @Input() teacher?: Teacher;
 
+ 
 }
+

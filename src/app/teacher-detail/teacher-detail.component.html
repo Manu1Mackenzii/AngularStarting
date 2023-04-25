@@ -1,1 +1,12 @@
-<p>teacher-detail works!</p>
+<div *ngIf="teacher">
+
+    <h2>{{teacher.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{teacher.id}}</div>
+    <div>
+      <label for="teacher-name">Teacher name: </label>
+      <input id="teacher-name" [(ngModel)]="teacher.name" placeholder="name">
+    </div>
+  
+  </div>
+
+
