@@ -6,14 +6,16 @@ import { AppComponent } from './app.component';
 import { TeachersComponent } from './teachers/teachers.component';
 import { FormsModule } from '@angular/forms';
 import { TeacherDetailComponent } from './teacher-detail/teacher-detail.component';
-import { MessagesComponent } from './messages/messages.component'; // <-- NgModel lives here
+import { MessagesComponent } from './messages/messages.component';
+import { DashboardComponent } from './dashboard/dashboard.component'; // <-- NgModel lives here
 
 @NgModule({
   declarations: [
     AppComponent,
     TeachersComponent,
     TeacherDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

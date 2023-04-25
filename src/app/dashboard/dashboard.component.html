@@ -1,0 +1,7 @@
+<h2>Listes des Professeurs</h2>
+<div class="teachers-menu">
+  <a *ngFor="let teacher of teachers"
+  routerLink="/detail/{{teacher.id}}">
+    {{teacher.name}}
+  </a>
+</div>
