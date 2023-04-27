@@ -21,7 +21,7 @@ export class DashboardComponent implements OnInit {
 
   getTeachers(): void {
     this.teacherService.getTeachers()
-        .subscribe(teachers => this.teachers = teachers.slice(0, 5));
+        .subscribe(teachers => this.teachers = teachers.slice(0, 10));
   }
   
 

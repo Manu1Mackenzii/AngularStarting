@@ -28,7 +28,7 @@ button {
 }
 
 button {
-    background-color: #eee;
+    background-color: #cf7373;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -41,8 +41,8 @@ button {
 }
 
 button:hover {
-    background-color: purple;
-    color: white;
+    background-color: white;
+    color: rgb(228, 31, 31);
 }
 
 button:disabled {
@@ -51,6 +51,36 @@ button:disabled {
     cursor: auto;
 }
 
+
+
+span {
+    color: #333;
+    font-family: Cambria, Georgia, serif;
+}
+
+span {
+    background-color: #eee;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+span:hover {
+    background-color: purple;
+    color: white;
+}
+
+span:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}
 
 /* everywhere else */
 

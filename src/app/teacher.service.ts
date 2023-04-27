@@ -12,7 +12,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 })
 export class TeacherService {
 
-  private teachersUrl = 'api/heroes';  // URL to web api
+  private teachersUrl = 'api/teachers';  // URL to web api
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
